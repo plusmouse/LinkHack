@@ -1,0 +1,6 @@
+## Interface: 100205
+## Title: Link Hack
+## Version: 1
+## Author: plusmouse
+
+Main.lua

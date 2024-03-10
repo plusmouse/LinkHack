@@ -25,5 +25,8 @@ local function GenerateTooltip(itemID, keyLevel, itemLevel, upgradeLevel)
   GameTooltip:Show()
 end
 
-GameTooltip:SetOwner(UIParent, "ANCHOR_CENTER")
-GenerateTooltip(211470, 13, 460, 3)
+local item = Item:CreateFromItemID(211470)
+item:ContinueOnItemLoad(function()
+  GameTooltip:SetOwner(UIParent, "ANCHOR_CENTER")
+  GenerateTooltip(211470, 13, 460, 3)
+end)
